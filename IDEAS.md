@@ -3,7 +3,7 @@ This project was created in 2024 during my fall semester at URI. I consider this
 
 Towards the end of the project, my team and I began to work on developing a basic eye color classification model, because our professor said our original idea was 'beyond the scope of the course'. We weren't able to finish this model in time. 
 
-I'm coming back to this with some new ideas how I can use classification models to potentially improve the image reconstruction capabilities of the autoencoder. 
+I'm coming back to this with some new ideas how I can use classification models to potentially improve the image reconstruction capabilities of the autoencoder. Thinking further on this, it may be more beneficial to train models to classify the images based on the subject label themselves, rather than just the color, because if identifying the subject reuires fine details in the entire image, rather than just the iris color. 
 
 ## Hypothesis
 If an autoencoder is able to preserve fine details of an image, then a classification model trained solely on the original dataset will maintain a comparable of accuracy and confidence when inferring on the reconstructed data. The difference in classification will serve as a qunatitative metric of feature-loss.
