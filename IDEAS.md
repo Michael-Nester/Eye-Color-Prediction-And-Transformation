@@ -6,9 +6,9 @@ Towards the end of the project, my team and I began to work on developing a basi
 I'm coming back to this with some new ideas how I can use classification models to potentially improve the image reconstruction capabilities of the autoencoder. Thinking further on this, it may be more beneficial to train models to classify the images based on the subject label themselves, rather than just the color, because if identifying the subject reuires fine details in the entire image, rather than just the iris color. 
 
 ## Hypothesis
-If an autoencoder is able to preserve fine details of an image, then a classification model trained solely on the original dataset will maintain a comparable of accuracy and confidence when inferring on the reconstructed data. The difference in classification will serve as a qunatitative metric of feature-loss.
+If an autoencoder is able to preserve fine details of an image, then a classification model trained solely on the original dataset will maintain a comparable of accuracy and confidence when inferring on the iris color of the reconstructed data. The difference in classification will serve as a qunatitative metric of feature-loss.
 
-If the classification confidence delta between original and reconstructed images is minimized, then the overall image-reconstruction abilities of the autoencoder will be improved because the autoencoder is being explicitly forced to preserve the fine-grained details that the classifier relies on.
+If the subject classification confidence delta between original and reconstructed images is minimized, then the overall image-reconstruction abilities of the autoencoder will be improved because the autoencoder is being explicitly forced to preserve the fine-grained details that the classifier relies on.
 
 
 The basic idea is as follows:
